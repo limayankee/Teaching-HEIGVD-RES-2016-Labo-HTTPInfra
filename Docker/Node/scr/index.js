@@ -11,7 +11,7 @@ const app = new express;
 app.get('/', function(req, res){
   const number = chance.integer({min: 0, max: 2})
 
-  res.send(starwars());
+  res.send({"sentence": starwars()});
 });
 
 app.listen(8080, function(){
